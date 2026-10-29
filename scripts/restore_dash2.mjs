@@ -1,0 +1,1 @@
+﻿const {execFileSync}=require('child_process');const fs=require('fs');const out=execFileSync('git',['-C','../..','show','HEAD:apps/vendor-mobile-app/src/app/(tabs)/index.tsx'],{encoding:'utf8'});fs.writeFileSync('src/app/(tabs)/index.tsx',out);
